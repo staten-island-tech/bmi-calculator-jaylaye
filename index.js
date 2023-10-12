@@ -1,10 +1,9 @@
-
 let username = prompt("what is your name");
-let height = prompt("what is your height in cm");
-let weight = prompt("what is your weight in kg");
+let height = Number(prompt("what is your height in cm"));
+let weight = Number(prompt("what is your weight in kg"));
 
-function calcBMI(height, weight){
-    return(weight / height ** 2) *10000
+function calcBMI(){
+    return(weight / (Math.pow((height / 100), 2)));
 }
 const bmi = calcBMI();
 console.log ("bmi");
@@ -22,6 +21,10 @@ function rangeBMI(bmi){
     else if(bmi >=30){
         return "ur obese go on a diet!";
     }
+    else{
+        return "error";
+    }
 }
-BMI = calcBMI
+console.log("hey, " + username + " your bmi is " + bmi + " " + rangeBMI(bmi));
+
 
