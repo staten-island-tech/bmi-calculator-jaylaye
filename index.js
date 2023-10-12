@@ -25,6 +25,6 @@ function rangeBMI(bmi){
         return "error";
     }
 }
-console.log("hey, " + username + " your bmi is " + bmi + " " + rangeBMI(bmi));
+console.log("hey, " + username + " your bmi is " + bmi + ", " + rangeBMI(bmi));
 
 
